@@ -1,0 +1,183 @@
+@keyframes back {
+60% {
+	background-color: white;
+}
+
+100% {
+	background-color: black;
+}
+}
+
+@keyframes clr {
+0% {
+	stroke: black;
+}
+
+60% {
+	stroke: black;
+}
+
+100% {
+	stroke: #805500;
+}
+}
+
+@keyframes crcl-clr {
+0% {
+	stroke: black;
+	fill: white
+}
+
+60% {
+	stroke: black;
+	fill: white
+}
+
+100% {
+	stroke: #805500;
+	fill: black
+}
+}
+
+@keyframes txt-clr {
+0% {
+	stroke: black;
+	fill: black;
+}
+
+60% {
+	stroke: black;
+	fill: black;
+}
+
+100% {
+	stroke: #805500;
+	fill: #805500;
+}
+}
+
+@keyframes circroad {
+0% {
+	cx: -110px;
+	cy: 50%
+}
+
+70% {
+	cx: 51%;
+	cy: 50%
+}
+
+100% {
+	cx: 50%;
+	cy: 50%
+}
+}
+
+@keyframes circappear {
+0% {
+	opacity: 0
+}
+
+62% {
+	opacity: 0
+}
+
+100% {
+	opacity: 1
+}
+}
+
+@keyframes l-leaf-appear {
+60% {
+	transform: translate(200px, 0px)
+}
+
+90% {
+	transform: translate(199px, 0px)
+}
+
+100% {
+	transform: translate(199px, 0px)
+}
+}
+
+@keyframes r-leaf-appear {
+60% {
+	transform: translate(-203px, 0px)
+}
+
+90% {
+	transform: translate(-202px, 0px)
+}
+
+100% {
+	transform: translate(-202px, 0px)
+}
+}
+
+@keyframes acorn {
+30% {
+	transform: translate(0px, 0px)
+}
+
+70% {
+	transform: translate(0px, 131px)
+}
+
+100% {
+	transform: translate(0px, 130px)
+}
+}
+
+@keyframes txt {
+0% {
+	opacity: 0
+}
+
+50% {
+	opacity: 0
+}
+
+100% {
+	opacity: 1
+}
+}
+
+
+
+circle:nth-child(1) {
+animation: circroad 3s both, crcl-clr 6s both;
+transform-origin: 0% 50%;
+}
+
+#acrn {
+animation: acorn 3s both, clr 6s both;
+}
+
+circle:nth-child(2) {
+animation: circappear 4s both, clr 6s both;
+}
+
+text {
+fill: #000000;
+font-size: 35px;
+font: italic small-caps bold 35px sans-serif;
+animation: txt 5s both, txt-clr 6s both;
+}
+
+#r-leaf {
+animation: r-leaf-appear 3s both 1s, clr 6s both;
+}
+
+#l-leaf {
+animation: l-leaf-appear 3s both 1s, clr 6s both;
+}
+
+#main:hover {
+transform: scale(1.5)
+}
+
+.back {
+background-color: white;
+animation: back 6s both;
+}
